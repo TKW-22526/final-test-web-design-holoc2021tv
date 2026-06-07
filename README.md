@@ -178,7 +178,7 @@ Sinh viên cập nhật thông tin cá nhân tại đây:
 Họ và tên: Hồ Thế Lộc
 Mã số sinh viên: 110124109
 Lớp: DA24TTC
-Tên đề tài: Trang bán cây cảnh
+Tên đề tài: Trạm Cây Cảnh
 Liên kết GitHub repository: https://github.com/TKW-22526/final-test-web-design-holoc2021tv.git
 Liên kết GitHub Pages: https://tkw-22526.github.io/final-test-web-design-holoc2021tv/
 ```
