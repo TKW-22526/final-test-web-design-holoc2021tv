@@ -47,65 +47,65 @@ Sinh viên sử dụng tập tin này để thực hiện báo cáo kết thúc 
 
 ---
 
-### `css/`
+    ### `css/`
 
-Thư mục chứa các tập tin định dạng giao diện website.
+    Thư mục chứa các tập tin định dạng giao diện website.
 
-Ví dụ:
+    Ví dụ:
 
-```text
-css/style.css
-css/responsive.css
-```
+    ```text
+    css/style.css
+    css/responsive.css
+    ```
 
-Các tập tin trong thư mục này dùng để thiết kế bố cục, màu sắc, font chữ, khoảng cách, hiệu ứng hiển thị và khả năng tương thích trên các thiết bị khác nhau.
+    Các tập tin trong thư mục này dùng để thiết kế bố cục, màu sắc, font chữ, khoảng cách, hiệu ứng hiển thị và khả năng tương thích trên các thiết bị khác nhau.
 
----
+    ---
 
-### `html/`
+    ### `html/`
 
-Thư mục chứa các trang HTML thành phần của website.
+    Thư mục chứa các trang HTML thành phần của website.
 
-Ví dụ:
+    Ví dụ:
 
-```text
-html/about.html
-html/contact.html
-html/product.html
-```
+    ```text
+    html/about.html
+    html/contact.html
+    html/product.html
+    ```
 
-Các trang HTML trong thư mục này được sử dụng để xây dựng các nội dung riêng biệt của website ngoài trang chính `index.html`.
+    Các trang HTML trong thư mục này được sử dụng để xây dựng các nội dung riêng biệt của website ngoài trang chính `index.html`.
 
----
+    ---
 
-### `js/`
+    ### `js/`
 
-Thư mục chứa các tập tin JavaScript dùng để xử lý tương tác trên website.
+    Thư mục chứa các tập tin JavaScript dùng để xử lý tương tác trên website.
 
-Ví dụ:
+    Ví dụ:
 
-```text
-js/main.js
-js/validation.js
-```
+    ```text
+    js/main.js
+    js/validation.js
+    ```
 
-Các tập tin JavaScript có thể dùng để:
+    Các tập tin JavaScript có thể dùng để:
 
-- Xử lý sự kiện người dùng
-- Kiểm tra dữ liệu nhập
-- Tạo hiệu ứng tương tác
-- Thao tác với DOM
-- Điều khiển các thành phần động trên website
+    - Xử lý sự kiện người dùng
+    - Kiểm tra dữ liệu nhập
+    - Tạo hiệu ứng tương tác
+    - Thao tác với DOM
+    - Điều khiển các thành phần động trên website
 
----
+    ---
 
-### `index.html`
+    ### `index.html`
 
-Đây là tập tin trang chủ của website.
+    Đây là tập tin trang chủ của website.
 
-Khi bật GitHub Pages, tập tin `index.html` sẽ là trang mặc định được hiển thị đầu tiên khi người dùng truy cập vào website.
+    Khi bật GitHub Pages, tập tin `index.html` sẽ là trang mặc định được hiển thị đầu tiên khi người dùng truy cập vào website.
 
----
+    ---
 
 ### `README.md`
 
@@ -175,10 +175,10 @@ Sinh viên cần nộp đầy đủ các nội dung sau:
 Sinh viên cập nhật thông tin cá nhân tại đây:
 
 ```text
-Họ và tên:
-Mã số sinh viên:
-Lớp:
-Tên đề tài:
-Liên kết GitHub repository:
-Liên kết GitHub Pages:
+Họ và tên: Hồ Thế Lộc
+Mã số sinh viên: 110124109
+Lớp: DA24TTC
+Tên đề tài: Trang bán cây cảnh
+Liên kết GitHub repository: https://github.com/TKW-22526/final-test-web-design-holoc2021tv.git
+Liên kết GitHub Pages: https://tkw-22526.github.io/final-test-web-design-holoc2021tv/
 ```
