@@ -235,3 +235,30 @@ main.khung-chua {
     height: auto;      /* Giữ nguyên tỉ lệ, không bị biến dạng */
     object-fit: contain; /* Đảm bảo toàn bộ ảnh đều được hiển thị */
 }
+
+/* Mặc định trên máy tính: hiển thị 4 sản phẩm/hàng */
+.danh-sach-san-pham {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+/* Trên máy tính bảng (màn hình < 992px): hiển thị 3 sản phẩm/hàng */
+@media screen and (max-width: 992px) {
+    .danh-sach-san-pham {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* Trên điện thoại (màn hình < 768px): hiển thị 1 sản phẩm/hàng */
+@media screen and (max-width: 768px) {
+    .danh-sach-san-pham {
+        grid-template-columns: 1fr; /* 1 cột duy nhất */
+    }
+    
+    /* Làm cho nút bấm to hơn để dễ chạm bằng ngón tay */
+    .nut-cam {
+        padding: 15px;
+        width: 100%;
+    }
+}
