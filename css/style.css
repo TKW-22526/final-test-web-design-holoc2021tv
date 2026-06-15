@@ -1,42 +1,59 @@
-/* BO CUC CHUNG */
+/* =========================================
+   1. BỐ CỤC CHUNG & CÀI ĐẶT GỐC
+   ========================================= */
 * { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
 body { font-family: Arial, sans-serif; background-color: #f8f9fa; color: #333; line-height: 1.6; }
 .khung-chua { width: 90%; max-width: 1200px; margin: 0 auto; padding: 40px 0; }
 .canh-giua { text-align: center; }
-.tieu-de-cam { color: #ff8c00; font-size: 24px; text-transform: uppercase; margin-bottom: 30px; font-weight: bold; }
+.tieu-de-cam { color: #ff8c00; font-size: 50px; text-transform: uppercase; margin-bottom: 30px; font-weight: bold; }
 .chu-do { color: red; }
+.rong-100 { width: 100%; }
+.duong-ke-ngang { border: 0; border-top: 1px solid #eee; margin: 10px 0; }
 
-/* PHAN DAU TRANG & LOGO */
+/* =========================================
+   2. PHẦN ĐẦU TRANG & LOGO
+   ========================================= */
 .phan-dau-trang { background: #fff; padding: 20px 0; display: flex; justify-content: space-between; align-items: center; }
 .logo-container { display: flex; align-items: center; gap: 10px; text-decoration: none; }
 .logo-anh { height: 40px; width: auto; object-fit: contain; }
 .logo-text { color: #28a745; font-size: 40px; font-weight: bold; }
 .nut-gio-hang { font-weight: bold; color: #ff8c00; text-decoration: none; }
 
-/* DIEU HUONG & BANNER */
+/* =========================================
+   3. THANH ĐIỀU HƯỚNG & BANNER
+   ========================================= */
 .thanh-dieu-huong { background-color: #28a745; padding: 10px 0; }
 .danh-sach-dieu-huong { list-style: none; display: flex; gap: 30px; justify-content: center; }
 .danh-sach-dieu-huong a { color: white; text-decoration: none; font-size: 16px; font-weight: bold; text-transform: uppercase; }
 .danh-sach-dieu-huong a:hover { color: #ffeb3b; }
 .banner-chinh { background-image: url('../assets/anhnen.jpg'); background-size: cover; background-position: center; height: 400px; display: flex; flex-direction: column; justify-content: center; align-items: center; color: white; text-shadow: 2px 2px 4px rgba(0,0,0,0.7); }
 
-/* LUOI SAN PHAM */
+/* =========================================
+   4. LƯỚI & THẺ SẢN PHẨM
+   ========================================= */
 .luoi-san-pham { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; }
-.the-san-pham { background: #fff; border: 1px solid #e0e0e0; padding: 15px; text-align: center; transition: 0.3s; display: flex; flex-direction: column; height: 100%; border-radius: 8px; }
+.danh-sach-san-pham { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; }
+.the-san-pham { background: #fff; border: 1px solid #e0e0e0; padding: 15px; text-align: center; transition: 0.3s; display: flex; flex-direction: column; height: 100%; border-radius: 8px; overflow: hidden; }
 .the-san-pham:hover { box-shadow: 0 4px 10px rgba(0,0,0,0.1); border-color: #28a745; transform: translateY(-5px); }
-.the-san-pham img { width: 100%; height: 220px; object-fit: contain; margin-bottom: 15px; }
+.the-san-pham img { width: 100%; height: 250px; object-fit: cover; margin-bottom: 15px; border-radius: 4px; display: block; transition: transform 0.4s ease; }
+.the-san-pham:hover img { transform: scale(1.08); }
 .ten-san-pham { font-size: 16px; margin-bottom: 10px; font-weight: normal; }
 .gia-tien { color: #0056b3; font-weight: bold; font-size: 18px; margin-bottom: 15px; }
 
-/* NUT BAM */
+/* =========================================
+   5. CÁC NÚT BẤM
+   ========================================= */
 .nhom-nut-bam { margin-top: auto; display: flex; flex-direction: column; gap: 10px; }
-.nut-cam { background-color: #ff8c00; color: white; border: none; padding: 10px; font-weight: bold; cursor: pointer; text-transform: uppercase; text-decoration: none; text-align: center; border-radius: 4px; }
-.nut-cam:hover { background-color: #e67e22; }
+.nut-cam { background-color: #ff8c00; color: white; border: none; padding: 10px; font-weight: bold; cursor: pointer; text-transform: uppercase; text-decoration: none; text-align: center; border-radius: 4px; transition: all 0.3s ease; }
+.nut-cam:hover { background-color: #e67e22; box-shadow: 0 4px 15px rgba(255, 140, 0, 0.4); transform: translateY(-2px); }
 .nut-trang { background-color: #fff; color: #ff8c00; border: 1px solid #ff8c00; }
 .nut-trang:hover { background-color: #ff8c00; color: white; }
 .nut-xam { display: inline-block; background-color: #6c757d; color: white; padding: 10px 15px; text-decoration: none; border-radius: 4px; margin-bottom: 20px; }
 
-/* TRANG CHI TIET SAN PHAM */
+/* =========================================
+   6. TRANG CHI TIẾT SẢN PHẨM
+   ========================================= */
 .chi-tiet-tren { display: flex; gap: 40px; background: #fff; padding: 30px; border-radius: 8px; margin-bottom: 40px; box-shadow: 0 2px 5px rgba(0,0,0,0.05); flex-wrap: wrap; }
 .chi-tiet-anh { flex: 1; min-width: 300px; }
 .chi-tiet-anh img { width: 100%; border-radius: 8px; border: 1px solid #eee; }
@@ -57,19 +74,41 @@ body { font-family: Arial, sans-serif; background-color: #f8f9fa; color: #333; l
 .menu-danh-muc { list-style: none; line-height: 2.5; }
 .menu-danh-muc a { text-decoration: none; color: #0056b3; transition: 0.2s; }
 .menu-danh-muc a:hover { color: #ff8c00; }
-.duong-ke-ngang { border: 0; border-top: 1px solid #eee; margin: 10px 0; }
 .so-luong-danh-muc { float: right; color: #999; }
+.anh-san-pham-chi-tiet { width: 100%; max-width: 500px; height: auto; object-fit: contain; }
 
-/* TRANG LIEN HE, GIOI THIEU, GIO HANG */
+/* =========================================
+   7. TRANG GIỚI THIỆU
+   ========================================= */
+.trang-gioi-thieu-container { max-width: 1000px; padding: 50px; margin: 0 auto; background: #fff; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.05); }
+.gt-khung-dau { text-align: center; margin-bottom: 40px; }
+.gt-logo-anh { height: 180px; margin-bottom: 20px; }
+.gt-tieu-de-chinh { color: #ff8c00; font-size: 46px; font-family: 'Times New Roman', Times, serif; font-style: italic; margin-bottom: 10px; }
+.gt-slogan { font-size: 18px; color: #333; font-weight: bold; }
+.gt-noi-dung { line-height: 1.8; text-align: justify; font-size: 16px; }
+.gt-noi-dung p { margin-bottom: 15px; }
+.gt-tieu-de-phu { font-size: 24px; color: #333; margin-bottom: 15px; margin-top: 30px; }
+.gt-danh-sach { margin-left: 40px; margin-bottom: 15px; }
+.gt-danh-sach li { margin-bottom: 8px; }
+.gt-gia-tri { list-style: none; margin-bottom: 20px; }
+.gt-gia-tri li { margin-bottom: 15px; }
+.gt-loi-goi-mo { margin-top: 40px; text-align: center; font-weight: bold; }
+.gt-loi-goi-mo a { color: #0056b3; text-decoration: none; }
+.gt-loi-goi-mo a:hover { text-decoration: underline; color: #ff8c00; }
+
+/* =========================================
+   8. TRANG LIÊN HỆ & GIỎ HÀNG
+   ========================================= */
 .hop-trang { background: #fff; padding: 40px; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.05); margin: 0 auto; max-width: 900px;}
 .nhom-nhap { margin-bottom: 15px; }
 .o-nhap { width: 100%; padding: 12px; border: 1px solid #ccc; border-radius: 4px; font-family: Arial, sans-serif; }
-.rong-100 { width: 100%; }
 .bang-gio-hang { width: 100%; border-collapse: collapse; margin-top: 20px; text-align: left; }
 .bang-gio-hang th, .bang-gio-hang td { padding: 15px; border-bottom: 1px solid #ddd; }
 .bang-gio-hang th { background-color: #f1f1f1; }
 
-/* CHAN TRANG (FOOTER) */
+/* =========================================
+   9. CHÂN TRANG
+   ========================================= */
 .chan-trang { background-color: #28a745; color: white; padding: 40px 0; margin-top: 50px; font-size: 14px; line-height: 1.8; }
 .luoi-chan-trang { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 30px; width: 90%; max-width: 1200px; margin: 0 auto; }
 .chan-trang h4 { margin-bottom: 20px; text-transform: uppercase; font-size: 16px; color: #ffeb3b; }
@@ -77,111 +116,9 @@ body { font-family: Arial, sans-serif; background-color: #f8f9fa; color: #333; l
 .chan-trang ul li a { color: white; text-decoration: none; }
 .chan-trang ul li a:hover { text-decoration: underline; }
 
-/* GIAO DIEN DIEN THOAI */
-@media (max-width: 768px) {
-  .phan-dau-trang { flex-direction: column; gap: 10px; }
-  .chi-tiet-tren, .layout-chi-tiet-moi { flex-direction: column; }
-  .danh-sach-dieu-huong { flex-direction: column; gap: 10px; text-align: center; }
-  .cot-phu { border-left: none; padding-left: 0; border-top: 1px solid #eee; padding-top: 20px; }
-}
-
 /* =========================================
-   TRANG GIỚI THIỆU
+   10. HIỆU ỨNG ĐỘNG
    ========================================= */
-.trang-gioi-thieu-container {
-    max-width: 1000px;
-    padding: 50px;
-    margin: 0 auto;
-    background: #fff;
-    border-radius: 8px;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
-}
-
-.gt-khung-dau {
-    text-align: center;
-    margin-bottom: 40px;
-}
-
-.gt-logo-anh {
-    height: 180px;
-    margin-bottom: 20px;
-}
-
-.gt-tieu-de-chinh {
-    color: #ff8c00;
-    font-size: 46px;
-    font-family: 'Times New Roman', Times, serif;
-    font-style: italic;
-    margin-bottom: 10px;
-}
-
-.gt-slogan {
-    font-size: 18px;
-    color: #333;
-    font-weight: bold;
-}
-
-.gt-noi-dung {
-    line-height: 1.8;
-    text-align: justify;
-    font-size: 16px;
-}
-
-.gt-noi-dung p {
-    margin-bottom: 15px;
-}
-
-.gt-tieu-de-phu {
-    font-size: 24px;
-    color: #333;
-    margin-bottom: 15px;
-    margin-top: 30px;
-}
-
-.gt-danh-sach {
-    margin-left: 40px;
-    margin-bottom: 15px;
-}
-
-.gt-danh-sach li {
-    margin-bottom: 8px;
-}
-
-.gt-gia-tri {
-    list-style: none;
-    margin-bottom: 20px;
-}
-
-.gt-gia-tri li {
-    margin-bottom: 15px;
-}
-
-.gt-loi-goi-mo {
-    margin-top: 40px;
-    text-align: center;
-    font-weight: bold;
-}
-
-.gt-loi-goi-mo a {
-    color: #0056b3;
-    text-decoration: none;
-}
-
-.gt-loi-goi-mo a:hover {
-    text-decoration: underline;
-    color: #ff8c00;
-}
-
-/* =========================================
-   HIỆU ỨNG (ANIMATIONS & TRANSITIONS)
-   ========================================= */
-
-/* 1. Cuộn trang mượt mà cho toàn bộ website */
-html {
-    scroll-behavior: smooth;
-}
-
-/* 2. Hiệu ứng mờ dần và trượt lên khi tải trang (Fade-in) */
 @keyframes taiTrang {
     from { 
         opacity: 0; 
@@ -192,71 +129,33 @@ html {
         transform: translateY(0); 
     }
 }
-
 main.khung-chua {
     animation: taiTrang 0.6s ease-out forwards;
 }
 
-/* 3. Hiệu ứng phóng to ảnh sản phẩm bên trong khung */
-.the-san-pham {
-    overflow: hidden; /* Bắt buộc: Giữ ảnh không tràn ra ngoài viền khi zoom */
-}
-
-.the-san-pham img {
-    transition: transform 0.4s ease;
-}
-
-.the-san-pham:hover img {
-    transform: scale(1.08); /* Phóng to ảnh lên 8% */
-}
-
-/* 4. Hiệu ứng phát sáng và nảy nhẹ cho các nút bấm cam */
-.nut-cam {
-    transition: all 0.3s ease;
-}
-
-.nut-cam:hover {
-    box-shadow: 0 4px 15px rgba(255, 140, 0, 0.4); /* Tạo quầng sáng màu cam */
-    transform: translateY(-2px); /* Đẩy nút nhô lên nhẹ */
-}
-
-.the-san-pham img {
-    width: 100%;        /* Chiều rộng chiếm hết khung */
-    height: 250px;      /* Cố định chiều cao cho tất cả ảnh */
-    object-fit: cover;  /* QUAN TRỌNG: Thuộc tính này giúp ảnh cắt tự động để vừa khung mà không bị méo */
-    border-radius: 4px; /* Tùy chọn: bo góc nhẹ cho ảnh đẹp hơn */
-    display: block;     /* Loại bỏ khoảng trắng thừa dưới ảnh */
-}
-
-/* Trong file style.css của trang chi tiết */
-.anh-san-pham-chi-tiet {
-    width: 100%;       /* Cho phép nó linh hoạt theo khung chứa */
-    max-width: 500px;  /* Giới hạn kích thước tối đa để không bị vỡ ảnh */
-    height: auto;      /* Giữ nguyên tỉ lệ, không bị biến dạng */
-    object-fit: contain; /* Đảm bảo toàn bộ ảnh đều được hiển thị */
-}
-
-/* Mặc định trên máy tính: hiển thị 4 sản phẩm/hàng */
-.danh-sach-san-pham {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 20px;
-}
-
-/* Trên máy tính bảng (màn hình < 992px): hiển thị 3 sản phẩm/hàng */
+/* =========================================
+   11. TƯƠNG THÍCH GIAO DIỆN
+   ========================================= */
+/* Trên máy tính bảng (màn hình < 992px) */
 @media screen and (max-width: 992px) {
     .danh-sach-san-pham {
         grid-template-columns: repeat(3, 1fr);
     }
 }
 
-/* Trên điện thoại (màn hình < 768px): hiển thị 1 sản phẩm/hàng */
+/* Giao diện điện thoại chung (màn hình < 768px) */
+@media (max-width: 768px) {
+  .phan-dau-trang { flex-direction: column; gap: 10px; }
+  .chi-tiet-tren, .layout-chi-tiet-moi { flex-direction: column; }
+  .danh-sach-dieu-huong { flex-direction: column; gap: 10px; text-align: center; }
+  .cot-phu { border-left: none; padding-left: 0; border-top: 1px solid #eee; padding-top: 20px; }
+}
+
+/* Cấu hình lưới và nút trên điện thoại (màn hình < 768px) */
 @media screen and (max-width: 768px) {
     .danh-sach-san-pham {
-        grid-template-columns: 1fr; /* 1 cột duy nhất */
+        grid-template-columns: 1fr;
     }
-    
-    /* Làm cho nút bấm to hơn để dễ chạm bằng ngón tay */
     .nut-cam {
         padding: 15px;
         width: 100%;
