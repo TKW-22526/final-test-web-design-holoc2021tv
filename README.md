@@ -8,11 +8,39 @@
 .
 ├── .git/
 ├── assets/
-│   └── thesis/
-│       └── template_thesis.dotx
+│   ├── thesis/
+│   ├── anhnen.jpg
+│   ├── cay-da.jpg
+│   ├── cay-du-tau.jpg
+│   ├── cay-khe-bonsai.jpg
+│   ├── cay-kim-quyt.jpg
+│   ├── cay-linh-sam.jpg
+│   ├── cay-me-bonsai.jpg
+│   ├── cay-nguyet-que.jpg
+│   ├── cay-sanh-bonsai.jpg
+│   ├── cay-sung-bonsai.jpg
+│   ├── da-bup-do.jpg
+│   ├── hai-duong-bonsai.jpg
+│   ├── hoa-giay-bonsai.jpg
+│   ├── huong-thao.jpg
+│   ├── linh-sam-song-hinh.jpg
+│   ├── loc-vung-bonsai.jpg
+│   ├── logo.jpg
+│   ├── mai-chieu-thuy.jpg
+│   ├── phat-tai-nui.jpg
+│   ├── phong-la-do.jpg
+│   ├── tra-phuc-kien.jpg
+│   └── tung-la-han.jpg
 ├── css/
+│   └── style.css
 ├── html/
+│   ├── chi-tiet.html
+│   ├── gio-hang.html
+│   ├── gioi-thieu.html
+│   ├── lien-he.html
+│   └── san-pham.html
 ├── js/
+│   └── script.js
 ├── index.html
 └── README.md
 ```
